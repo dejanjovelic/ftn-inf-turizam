@@ -1,0 +1,136 @@
+$primary-color: #333;
+$background-color: #f4f4f9;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: $background-color;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+
+    .title {
+        color: #f4f4f9;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        li {
+
+            a {
+                color: #f4f4f9;
+                text-decoration: none;
+                font-size: 18px
+            }
+        }
+
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+    .table-container {
+
+        #tours {
+            border-collapse: collapse;
+            width: 600px;
+            height: 100px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: $box-shadow;
+           
+
+            thead {
+                height: 50px;
+            }
+
+            tbody {
+                background-color: white;
+            }
+
+            th,
+            td {
+                border: 1px solid $primary-color;
+                padding: 10px;
+            }
+        }
+
+        #tour-details {
+            
+            width: 250px;
+
+            p {
+                border: 1px solid $primary-color;
+                background-color: white;      
+            }
+        }
+
+    }
+
+
+    #form {
+        padding: 20px;
+        width: 250px;
+        border: 1px solid $primary-color;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        input {
+            border: none;
+            border-bottom: 1px solid #333;
+            min-width: 130px;
+            max-height: 20px;
+            flex: 1 1;
+         
+        }
+
+        label {
+            max-height: 20px;
+            margin: 5px 0;
+        }
+
+        .button-section {
+            display: flex;
+            gap: 130px;
+
+            #addTag {
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+            }
+
+            #submitBtn {
+                width: 50px;
+                height: 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

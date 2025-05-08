@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .title {
+  color: #f4f4f9;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navbar .nav-links li a {
+  color: #f4f4f9;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.container .table-container #tours {
+  border-collapse: collapse;
+  width: 600px;
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container .table-container #tours thead {
+  height: 50px;
+}
+.container .table-container #tours tbody {
+  background-color: white;
+}
+.container .table-container #tours th,
+.container .table-container #tours td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+.container .table-container #tour-details {
+  width: 250px;
+}
+.container .table-container #tour-details p {
+  border: 1px solid #333;
+  background-color: white;
+}
+.container #form {
+  padding: 20px;
+  width: 250px;
+  border: 1px solid #333;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container #form input {
+  border: none;
+  border-bottom: 1px solid #333;
+  min-width: 130px;
+  max-height: 20px;
+  flex: 1 1;
+}
+.container #form label {
+  max-height: 20px;
+  margin: 5px 0;
+}
+.container #form .button-section {
+  display: flex;
+  gap: 130px;
+}
+.container #form .button-section #addTag {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.container #form .button-section #submitBtn {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=tours.css.map */
