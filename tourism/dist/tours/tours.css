@@ -82,6 +82,8 @@ body {
   min-width: 130px;
   max-height: 20px;
   flex: 1 1;
+  font-size: 15px;
+  margin-left: 5px;
 }
 .container #form label {
   max-height: 20px;
