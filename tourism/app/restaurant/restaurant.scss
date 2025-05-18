@@ -75,6 +75,44 @@ body {
     }
 }
 
+#restaurant-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+    overflow: auto;
+
+    label {
+        padding-top: 10px;
+        color: $secondary-color;
+    }
+
+    input, textarea {
+        width: 200px;
+        border-radius: 5px;
+        flex-shrink: 0;
+    }
+
+    label, input, textarea {
+        margin: 0 45px 0 45px;
+    }
+
+    .types-input {
+        display: flex;
+        
+
+        input {
+            height: 20px;
+        }
+
+        #add-type {
+            margin-right: 40px;
+            padding: 5px 10px 5px 10px;
+        }
+    }
+
+}
+
 #restaurant-details {
     background-color: $primary-color;
     height: 200px;
@@ -92,5 +130,43 @@ body {
         line-height: 50px;
         margin-left: 20px;
         letter-spacing: 2px;
+    }
+}
+
+.container {
+    display: flex;
+    height: 300px;
+
+    .talbe-div{
+        height: 200px;
+    }
+
+    .form-div {
+        margin-top: 50px;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: $primary-color;
+        border-radius: 10px;
+
+        #add-restaurant{
+            width: 100px;
+            align-self: flex-end;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(36, 33, 33);
+            color: $secondary-color;
+            border-radius: 10px;
+        }
+
+        #add-type {
+           background-color: rgb(36, 33, 33);
+            color: $secondary-color;
+            border-radius: 10px;
+
+            margin-right: 40px;
+            padding: 5px 10px 5px 10px;
+        }
+
     }
 }

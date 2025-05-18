@@ -62,6 +62,36 @@ body {
   text-align: center;
 }
 
+#restaurant-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  overflow: auto;
+}
+#restaurant-form label {
+  padding-top: 10px;
+  color: #fff;
+}
+#restaurant-form input, #restaurant-form textarea {
+  width: 200px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+#restaurant-form label, #restaurant-form input, #restaurant-form textarea {
+  margin: 0 45px 0 45px;
+}
+#restaurant-form .types-input {
+  display: flex;
+}
+#restaurant-form .types-input input {
+  height: 20px;
+}
+#restaurant-form .types-input #add-type {
+  margin-right: 40px;
+  padding: 5px 10px 5px 10px;
+}
+
 #restaurant-details {
   background-color: #333;
   height: 200px;
@@ -79,6 +109,38 @@ body {
   line-height: 50px;
   margin-left: 20px;
   letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  height: 300px;
+}
+.container .talbe-div {
+  height: 200px;
+}
+.container .form-div {
+  margin-top: 50px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 10px;
+}
+.container .form-div #add-restaurant {
+  width: 100px;
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(36, 33, 33);
+  color: #fff;
+  border-radius: 10px;
+}
+.container .form-div #add-type {
+  background-color: rgb(36, 33, 33);
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 40px;
+  padding: 5px 10px 5px 10px;
 }
 
 /*# sourceMappingURL=restaurant.css.map */

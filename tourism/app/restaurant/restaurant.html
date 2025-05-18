@@ -17,16 +17,36 @@
     </nav>
 
     <div class="container">
+        <div class="table-div">
         <table id="restaurant-table">
             <thead>
                 <tr>
                     <th>Naziv</th>
-                    <th>Kuhinja</th>
+                    <th>Opis</th>
                 </tr>
             </thead>
             <tbody id="table-body">
             </tbody>
         </table>
+        </div>
+
+        <div class="form-div">
+        <form id="restaurant-form" action="#">
+            <label for="name">Naziv restorana</label>
+            <input type="text" name="name" id="name">
+
+            <label for="description">Opis</label>
+            <textarea name="description" id="description"></textarea>
+
+            <label for="types">Tipovi kuhinje</label>
+            <div class="types-input">
+            <input type="text" name="types" id="types">
+
+            <button type="button" id="add-type">+</button>
+            </div>
+        </form>
+        <button type="button" id="add-restaurant">Dodaj</button>
+        </div>
     </div>
     <div id="restaurant-details"></div>
     <script src="restaurant.js"></script>
